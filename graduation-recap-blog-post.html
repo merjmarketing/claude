@@ -109,18 +109,26 @@
 
   <p>If you couldn't join us in person — or you just want to relive the day — click play below to watch the graduation recap:</p>
 
-  <!-- YouTube embed: https://www.youtube.com/watch?v=9L5n7cRaG8E
-       The player loads on the page; the video plays when the reader clicks it. -->
+  <!-- YouTube click-to-play embed: https://www.youtube.com/watch?v=9L5n7cRaG8E
+       Shows the video thumbnail with a play button; clicking it loads the
+       YouTube player and starts the video right on the page. If the player
+       can't load (e.g., previewing this file locally), the click opens the
+       video on YouTube instead. -->
   <figure>
-    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-      <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-        src="https://www.youtube.com/embed/9L5n7cRaG8E"
-        title="Restore Education Graduation Recap"
-        loading="lazy"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;background:#000;">
+      <a href="https://www.youtube.com/watch?v=9L5n7cRaG8E" target="_blank" rel="noopener"
+         aria-label="Play video: Restore Education Graduation Recap"
+         style="position:absolute;top:0;left:0;width:100%;height:100%;display:block;"
+         onclick="if(location.protocol==='file:'){return true;}this.parentNode.innerHTML='&lt;iframe src=&quot;https://www.youtube.com/embed/9L5n7cRaG8E?autoplay=1&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;border:0;&quot; title=&quot;Restore Education Graduation Recap&quot; allow=&quot;autoplay; encrypted-media; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;';return false;">
+        <img src="https://img.youtube.com/vi/9L5n7cRaG8E/hqdefault.jpg"
+             alt="Restore Education Graduation Recap video"
+             style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+        <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:72px;height:50px;background:rgba(23,23,23,0.85);border-radius:12px;display:flex;align-items:center;justify-content:center;">
+          <span style="display:block;width:0;height:0;border-style:solid;border-width:12px 0 12px 21px;border-color:transparent transparent transparent #ffffff;"></span>
+        </span>
+      </a>
     </div>
-    <figcaption>Restore Education Graduation Recap</figcaption>
+    <figcaption>Restore Education Graduation Recap — click to play</figcaption>
   </figure>
 
   <h2>Ready to Write Your Own Story?</h2>
