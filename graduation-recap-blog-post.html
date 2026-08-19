@@ -1,56 +1,63 @@
 <!--
-  Blog post draft for Restore Education's WordPress site
-  Suggested title: Celebrating Our Graduates: 2026 Graduation Recap
+  Blog post draft for Restore Education's Newsroom (WordPress)
+  Suggested title: A Room Full of New Beginnings: 2026 Graduation Recap
   Suggested slug:  graduation-recap-2026
   Suggested category: News & Events
   Suggested tags: graduation, GED, high school equivalency, students, San Antonio
 
   How to use:
-  1. In WordPress, create a new post and paste the suggested title above.
+  1. In WordPress, create a new post in the Newsroom and paste the suggested title above.
   2. Add a "Custom HTML" block and paste everything below this comment.
-  3. Replace the remaining [BRACKETED PLACEHOLDERS] (ceremony date, venue,
-     graduate count, quote) with the real details before publishing.
-  4. Set a featured image (a photo from the ceremony works best).
+  3. The YouTube video is embedded as a standard player — readers click the
+     play button and the video plays right on the page.
+  4. Replace the three photo placeholders at the bottom with real ceremony
+     photos (swap each placeholder <div> for an <img> tag, or use a WordPress
+     Gallery block in their place). Update the captions to match.
+  5. Set a featured image (a photo from the ceremony works best).
 
-  Styling is intentionally minimal so headings, links, and buttons inherit
+  Styling is intentionally minimal so headings, links, and text inherit
   the Restore Education site theme's fonts and brand colors.
 -->
 
-<p>There's no feeling quite like watching a graduate cross the stage — and this year's ceremony was one for the books. On <strong>[DATE]</strong>, the Restore Education family gathered at <strong>[VENUE]</strong> to celebrate <strong>[NUMBER]</strong> graduates who worked, persevered, and earned their moment in the spotlight.</p>
+<p>Graduation day at Restore Education was nothing short of powerful. The auditorium buzzed with pride as families filled the seats to watch their loved ones cross the stage, many of them seeing this moment years in the making. Keynote speaker Dr. Adriana Rocha Garcia captured the heart of the day when she reminded graduates that everyone deserves a second chance: "everyone gets a do-over, and today might be your do-over. Today might be the first day in your second chance." That message resonated throughout the room, echoed by graduates who shared what earning their GED and diploma meant to them. Again and again, they spoke about their gratitude for the opportunity to finish what they started and the joy of having their families there to witness it. The energy was moving and unmistakable: this was more than a ceremony, it was a room full of people stepping into new beginnings.</p>
 
-<p>If you couldn't join us in person — or you just want to relive the day — watch our graduation recap below:</p>
+<p>If you couldn't join us in person — or you just want to relive the day — click play below to watch the graduation recap:</p>
 
-<figure style="max-width:560px;margin:2em auto;">
+<!-- YouTube embed: https://www.youtube.com/watch?v=9L5n7cRaG8E
+     The player loads on the page; the video plays when the reader clicks it. -->
+<figure style="max-width:720px;margin:2em auto;">
   <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-    <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;"
+    <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
       src="https://www.youtube.com/embed/9L5n7cRaG8E"
       title="Restore Education Graduation Recap"
-      frameborder="0"
+      loading="lazy"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>
   </div>
   <figcaption style="text-align:center;font-size:0.9em;opacity:0.75;margin-top:0.5em;">Restore Education Graduation Recap</figcaption>
 </figure>
 
-<h2>A Day of Restored Potential</h2>
-
-<p>At Restore Education, our mission is to restore the potential of students who have lost connection with traditional education — and graduation day is that mission made visible. Every graduate who crossed the stage has a story. Some balanced late-night study sessions with full-time jobs and family responsibilities. Others returned to the classroom after years away, determined to finish what they started. What they all share is the courage to take the next step — and the persistence to see it through.</p>
-
-<p>[OPTIONAL: Add 2–3 sentences highlighting specific moments from the ceremony — the keynote speaker, a student speech, a standout graduate story.]</p>
-
-<blockquote>
-  <p>"[GRADUATE OR SPEAKER QUOTE]"</p>
-  <cite>— [NAME], [PROGRAM OR ROLE]</cite>
-</blockquote>
-
-<h2>More Than a Diploma</h2>
-
-<p>For our graduates, this milestone is a doorway — to college enrollment, to career training in high-demand fields like healthcare, business, and IT, and to life-sustaining careers that lift up whole families. Our students don't just finish; they keep climbing: Restore Education students go on to complete college degrees at double the rate of their peers, and more than 80% of our workforce training students earn a certification and land a job within a year.</p>
-
-<h2>Thank You, San Antonio</h2>
-
-<p>Days like this don't happen alone. Thank you to our dedicated instructors and staff, our volunteers, our community partners across San Antonio and Bexar County, and the family members whose encouragement carried our students across the finish line. And most of all — congratulations, graduates. This is your moment. 🎓</p>
-
 <h2>Ready to Write Your Own Story?</h2>
 
 <p>If you or someone you love is ready to earn a high school equivalency (offered in English and Spanish), train for a new career, or take the first step toward college, we're here to help. <a href="https://restoreeducation.org/apply/">Become a student today</a>, explore <a href="https://restoreeducation.org/programs/">our programs</a>, or call us at <a href="tel:+12104326123">(210) 432-6123</a>.</p>
+
+<h2>Moments From the Day</h2>
+
+<!-- PHOTO GALLERY PLACEHOLDERS
+     Replace each placeholder <div> below with a real photo, e.g.:
+     <img src="[PHOTO URL]" alt="[Describe the photo]" style="width:100%;height:100%;object-fit:cover;">
+     Or delete this whole section and drop in a WordPress Gallery block. -->
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1em;margin:1.5em 0;">
+  <figure style="margin:0;">
+    <div style="aspect-ratio:4/3;background:#e9e9e9;border:2px dashed #b5b5b5;display:flex;align-items:center;justify-content:center;text-align:center;color:#777;font-size:0.9em;padding:1em;">[PHOTO 1 — e.g., graduates crossing the stage]</div>
+    <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.4em;">[Caption for photo 1]</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <div style="aspect-ratio:4/3;background:#e9e9e9;border:2px dashed #b5b5b5;display:flex;align-items:center;justify-content:center;text-align:center;color:#777;font-size:0.9em;padding:1em;">[PHOTO 2 — e.g., Dr. Adriana Rocha Garcia delivering the keynote]</div>
+    <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.4em;">[Caption for photo 2]</figcaption>
+  </figure>
+  <figure style="margin:0;">
+    <div style="aspect-ratio:4/3;background:#e9e9e9;border:2px dashed #b5b5b5;display:flex;align-items:center;justify-content:center;text-align:center;color:#777;font-size:0.9em;padding:1em;">[PHOTO 3 — e.g., graduates celebrating with their families]</div>
+    <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.4em;">[Caption for photo 3]</figcaption>
+  </figure>
+</div>
