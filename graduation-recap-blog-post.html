@@ -5,59 +5,153 @@
   Suggested category: News & Events
   Suggested tags: graduation, GED, high school equivalency, students, San Antonio
 
-  How to use:
-  1. In WordPress, create a new post in the Newsroom and paste the suggested title above.
-  2. Add a "Custom HTML" block and paste everything below this comment.
-  3. The YouTube video is embedded as a standard player — readers click the
-     play button and the video plays right on the page.
-  4. Replace the three photo placeholders at the bottom with real ceremony
-     photos (swap each placeholder <div> for an <img> tag, or use a WordPress
-     Gallery block in their place). Update the captions to match.
-  5. Set a featured image (a photo from the ceremony works best).
+  ============================================================
+  HOW TO USE IN WORDPRESS
+  ============================================================
+  1. In WordPress, create a new Newsroom post and enter the title above
+     in the post title field (don't paste the <h1> below — WordPress
+     renders the title itself, styled like your other blogs).
+  2. Add a "Custom HTML" block and paste ONLY the content between
+     <!-- POST BODY START --> and <!-- POST BODY END -->.
+     Everything outside those markers (the <style> block, the page
+     header) exists so this file previews like a real blog post —
+     on the live site, your theme supplies the fonts, colors, and
+     layout, so the post will automatically match the other
+     Newsroom blogs.
+  3. The YouTube video is embedded as a standard player — readers
+     click the play button and it plays right on the page.
+  4. Replace the three photo placeholders at the bottom with real
+     ceremony photos (swap each placeholder <div> for an <img>, or
+     use a WordPress Gallery block in their place).
+  5. Set a featured image (a ceremony photo works best).
 
-  Styling is intentionally minimal so headings, links, and text inherit
-  the Restore Education site theme's fonts and brand colors.
+  PREVIEW BRAND COLORS: the values below are placeholders — swap them
+  for Restore Education's exact brand colors to tune the preview.
+  (Not needed for publishing; the live theme overrides all of this.)
 -->
 
-<p>Graduation day at Restore Education was nothing short of powerful. The auditorium buzzed with pride as families filled the seats to watch their loved ones cross the stage, many of them seeing this moment years in the making. Keynote speaker Dr. Adriana Rocha Garcia captured the heart of the day when she reminded graduates that everyone deserves a second chance: "everyone gets a do-over, and today might be your do-over. Today might be the first day in your second chance." That message resonated throughout the room, echoed by graduates who shared what earning their GED and diploma meant to them. Again and again, they spoke about their gratitude for the opportunity to finish what they started and the joy of having their families there to witness it. The energy was moving and unmistakable: this was more than a ceremony, it was a room full of people stepping into new beginnings.</p>
+<style>
+  :root {
+    --brand-primary: #1d3557;   /* headings / links — swap for brand color */
+    --brand-accent:  #e07a2f;   /* buttons / highlights — swap for brand color */
+    --text:          #333333;
+    --text-muted:    #767676;
+    --rule:          #e6e6e6;
+  }
+  body { background: #ffffff; }
+  .post {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3em 1.25em 4em;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: var(--text);
+  }
+  .post header { margin-bottom: 2em; }
+  .post .meta {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.75em;
+  }
+  .post .meta a { color: var(--brand-accent); text-decoration: none; }
+  .post h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    color: var(--brand-primary);
+    margin: 0 0 0.5em;
+  }
+  .post h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: var(--brand-primary);
+    margin: 1.75em 0 0.5em;
+  }
+  .post p { margin: 0 0 1.25em; }
+  .post a { color: var(--brand-primary); }
+  .post figure { margin: 2em 0; }
+  .post figcaption {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 0.6em;
+  }
+  .post .button {
+    display: inline-block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: var(--brand-accent);
+    padding: 0.75em 1.5em;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .post hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5em 0; }
+</style>
 
-<p>If you couldn't join us in person — or you just want to relive the day — click play below to watch the graduation recap:</p>
+<article class="post">
 
-<!-- YouTube embed: https://www.youtube.com/watch?v=9L5n7cRaG8E
-     The player loads on the page; the video plays when the reader clicks it. -->
-<figure style="max-width:720px;margin:2em auto;">
-  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-    <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-      src="https://www.youtube.com/embed/9L5n7cRaG8E"
-      title="Restore Education Graduation Recap"
-      loading="lazy"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+  <header>
+    <p class="meta"><a href="https://restoreeducation.org/newsroom/">News &amp; Events</a> &nbsp;•&nbsp; August 2026</p>
+    <h1>A Room Full of New Beginnings: 2026 Graduation Recap</h1>
+  </header>
+
+  <!-- POST BODY START — paste everything from here to POST BODY END into a WordPress Custom HTML block -->
+
+  <p>Graduation day at Restore Education was nothing short of powerful. The auditorium buzzed with pride as families filled the seats to watch their loved ones cross the stage, many of them seeing this moment years in the making. Keynote speaker Dr. Adriana Rocha Garcia captured the heart of the day when she reminded graduates that everyone deserves a second chance: "everyone gets a do-over, and today might be your do-over. Today might be the first day in your second chance." That message resonated throughout the room, echoed by graduates who shared what earning their GED and diploma meant to them. Again and again, they spoke about their gratitude for the opportunity to finish what they started and the joy of having their families there to witness it. The energy was moving and unmistakable: this was more than a ceremony, it was a room full of people stepping into new beginnings.</p>
+
+  <p>If you couldn't join us in person — or you just want to relive the day — click play below to watch the graduation recap:</p>
+
+  <!-- YouTube embed: https://www.youtube.com/watch?v=9L5n7cRaG8E
+       The player loads on the page; the video plays when the reader clicks it. -->
+  <figure>
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+      <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+        src="https://www.youtube.com/embed/9L5n7cRaG8E"
+        title="Restore Education Graduation Recap"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <figcaption>Restore Education Graduation Recap</figcaption>
+  </figure>
+
+  <h2>Ready to Write Your Own Story?</h2>
+
+  <p>If you or someone you love is ready to earn a high school equivalency (offered in English and Spanish), train for a new career, or take the first step toward college, we're here to help. Explore <a href="https://restoreeducation.org/programs/">our programs</a> or call us at <a href="tel:+12104326123">(210) 432-6123</a>.</p>
+
+  <p style="text-align:center;margin:2em 0;"><a class="button" href="https://restoreeducation.org/apply/" style="display:inline-block;font-family:Helvetica,Arial,sans-serif;font-weight:bold;color:#ffffff;background:#e07a2f;padding:0.75em 1.5em;border-radius:4px;text-decoration:none;">Become a Student Today</a></p>
+
+  <hr>
+
+  <h2>Moments From the Day</h2>
+
+  <!-- PHOTO GALLERY PLACEHOLDERS
+       Replace each placeholder <div> below with a real photo, e.g.:
+       <img src="[PHOTO URL]" alt="[Describe the photo]" style="width:100%;height:100%;object-fit:cover;">
+       Or delete this whole section and drop in a WordPress Gallery block. -->
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1em;margin:1.5em 0;">
+    <figure style="margin:0;">
+      <div style="aspect-ratio:4/3;background:#f0f0f0;border:2px dashed #c4c4c4;display:flex;align-items:center;justify-content:center;text-align:center;color:#777;font-size:0.85rem;font-family:Helvetica,Arial,sans-serif;padding:1em;">[PHOTO 1 — e.g., graduates crossing the stage]</div>
+      <figcaption>[Caption for photo 1]</figcaption>
+    </figure>
+    <figure style="margin:0;">
+      <div style="aspect-ratio:4/3;background:#f0f0f0;border:2px dashed #c4c4c4;display:flex;align-items:center;justify-content:center;text-align:center;color:#777;font-size:0.85rem;font-family:Helvetica,Arial,sans-serif;padding:1em;">[PHOTO 2 — e.g., Dr. Adriana Rocha Garcia delivering the keynote]</div>
+      <figcaption>[Caption for photo 2]</figcaption>
+    </figure>
+    <figure style="margin:0;">
+      <div style="aspect-ratio:4/3;background:#f0f0f0;border:2px dashed #c4c4c4;display:flex;align-items:center;justify-content:center;text-align:center;color:#777;font-size:0.85rem;font-family:Helvetica,Arial,sans-serif;padding:1em;">[PHOTO 3 — e.g., graduates celebrating with their families]</div>
+      <figcaption>[Caption for photo 3]</figcaption>
+    </figure>
   </div>
-  <figcaption style="text-align:center;font-size:0.9em;opacity:0.75;margin-top:0.5em;">Restore Education Graduation Recap</figcaption>
-</figure>
 
-<h2>Ready to Write Your Own Story?</h2>
+  <!-- POST BODY END -->
 
-<p>If you or someone you love is ready to earn a high school equivalency (offered in English and Spanish), train for a new career, or take the first step toward college, we're here to help. <a href="https://restoreeducation.org/apply/">Become a student today</a>, explore <a href="https://restoreeducation.org/programs/">our programs</a>, or call us at <a href="tel:+12104326123">(210) 432-6123</a>.</p>
-
-<h2>Moments From the Day</h2>
-
-<!-- PHOTO GALLERY PLACEHOLDERS
-     Replace each placeholder <div> below with a real photo, e.g.:
-     <img src="[PHOTO URL]" alt="[Describe the photo]" style="width:100%;height:100%;object-fit:cover;">
-     Or delete this whole section and drop in a WordPress Gallery block. -->
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1em;margin:1.5em 0;">
-  <figure style="margin:0;">
-    <div style="aspect-ratio:4/3;background:#e9e9e9;border:2px dashed #b5b5b5;display:flex;align-items:center;justify-content:center;text-align:center;color:#777;font-size:0.9em;padding:1em;">[PHOTO 1 — e.g., graduates crossing the stage]</div>
-    <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.4em;">[Caption for photo 1]</figcaption>
-  </figure>
-  <figure style="margin:0;">
-    <div style="aspect-ratio:4/3;background:#e9e9e9;border:2px dashed #b5b5b5;display:flex;align-items:center;justify-content:center;text-align:center;color:#777;font-size:0.9em;padding:1em;">[PHOTO 2 — e.g., Dr. Adriana Rocha Garcia delivering the keynote]</div>
-    <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.4em;">[Caption for photo 2]</figcaption>
-  </figure>
-  <figure style="margin:0;">
-    <div style="aspect-ratio:4/3;background:#e9e9e9;border:2px dashed #b5b5b5;display:flex;align-items:center;justify-content:center;text-align:center;color:#777;font-size:0.9em;padding:1em;">[PHOTO 3 — e.g., graduates celebrating with their families]</div>
-    <figcaption style="font-size:0.85em;opacity:0.75;margin-top:0.4em;">[Caption for photo 3]</figcaption>
-  </figure>
-</div>
+</article>
